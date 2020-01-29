@@ -1,0 +1,92 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --col-number: 7;
+}
+
+html {
+  font-size: 1.1618em;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background-color: #efefef;
+  font-size: 1rem;
+  line-height: 1.618rem;
+  color: #222222;
+  font-weight: 400;
+}
+
+/* Grid System */
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-fluid {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.row {
+  background-color: #dadada;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  align-content: flex-start;
+  -webkit-align-content: flex-start;
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+div[class^="col-"] {
+  padding: 1rem;
+  border: 1px solid #C700BB;
+}
+
+.col-1 {
+  background-color: #FFF2FC;
+  width: calc(1 * (100% / var(--col-number)));
+}
+
+.col-2 {
+  background-color: #FED6F4;
+}
+
+.col-3 {
+  background-color: #FDBBED;
+}
+
+.col-4 {
+  background-color: #FA86DF;
+}
+
+.col-5 {
+  background-color: #F557D3;
+}
+
+.col-6 {
+  background-color: #ED30CA;
+}
+
+.col-7 {
+  background-color: #E413C3;
+}
+
+/* End of Grid System */
