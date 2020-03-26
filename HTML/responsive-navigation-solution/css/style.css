@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat&display=swap');
+
+::before, ::after, * {
+  box-sizing: border-box;
+}
+
+:root {
+    --primary-color:     hsla(214, 72%, 43%, 1);
+    --primary-overlay:   hsla(214, 72%, 33%, 1);
+    --secondary-color:   hsla(214, 71%, 68%, 1);
+    --secondary-overlay: hsla(214, 71%, 58%, 1);
+    --dark-gray:         #eaeaea;
+    --light-gray:        #fafafa;
+    --black:             #000000;
+    --white:             #ffffff;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.618em;
+  font-family: "Montserrat", sans-serif;
+  color: #666666;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3 ,h4 ,h5, h6 {
+  max-width: 35em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: hsla(0, 0%, 0%, 1);
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1, .h1 {
+  font-size: 4.236em;
+  line-height: 4.764rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: hsla(215, 57%, 28%, 1);
+}
+
+h2, .h2 {
+  font-size: 2.618em;
+  line-height: 3.382rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: hsla(24, 76%, 53%, 1);
+}
+
+h3, .h3 {
+  font-size: 1.618em;
+  line-height: 2.382rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: hsla(215, 56%, 44%, 1);
+}
+
+h4, .h4 {
+  font-size: 1em;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: hsla(0, 0%, 0%, 1);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+q {
+    color: hsla(0, 0%, 0%, 1);
+    font-style: italic;
+    font-weight: 500;
+    quotes: '' '';
+}
+
+strong, b {
+  font-weight: 500;
+  color: hsla(0, 0%, 0%, 1);
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+  color: hsla(215, 56%, 44%, 1);
+}
+
+a:hover {
+  color: hsla(215, 56%, 34%, 1);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  padding: calc(1rem / 1.618);
+  background-color: var(--light-gray);
+}
+
+nav .open {
+  display: block !important;
+}
+
+nav a.navbar-brand {
+  flex: 1 1 70%;
+  max-width: 70%;
+  background: url("../img/FooBlah-Logo.svg") no-repeat 0 0/contain transparent;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 3rem;
+  text-indent: -999999px;
+  margin-bottom: 1rem;
+}
+
+nav button.navbar-toggler {
+  background-color: var(--primary-color);
+  border: 0;
+  padding: calc(1em / 1.618) 1em;
+  color: var(--white);
+  font-size: 1em;
+  cursor: pointer;
+}
+
+nav .navbar-collapse {
+  flex: 1 1 100%;
+  max-width: 100%;
+  display: none;
+}
+
+nav .navbar-collapse .navbar-nav,
+nav .navbar-collapse .dropdown-menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item {
+
+}
+
+nav .navbar-collapse .navbar-nav .nav-item .nav-link,
+nav .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-link {
+  padding: calc(1em / 1.618) 1em;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: var(--primary-color);
+}
+
+nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  background-color: var(--primary-overlay);
+  color: var(--white);
+}
+
+nav .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-link {
+  color: var(--black);
+}
+
+nav .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-link:hover {
+  background-color: var(--secondary-overlay);
+  color: var(--white);
+}
+
+nav .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-toggle:after {
+  font-family: FontAwesome;
+  content: "\f0d7";
+  margin-left: 1rem;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu {
+  display: none;
+}
+
+@media screen and (min-width: 720px){
+
+}
+
+@media screen and (min-width: 960px){
+  nav {
+    background-color: transparent;
+  }
+
+  nav .navbar-collapse {
+    display: block;
+  }
+
+  nav a.navbar-brand {
+    flex: 0 0 238px;
+    max-width: 238px;
+  }
+
+  nav button.navbar-toggler {
+    display: none;
+  }
+
+  nav .navbar-collapse {
+    flex: 1 1 calc(100% - 238px);
+    max-width: calc(100% - 238px);
+  }
+
+  nav .navbar-collapse .navbar-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  nav .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--light-gray);
+  }
+}
+/* End of Navigation */
