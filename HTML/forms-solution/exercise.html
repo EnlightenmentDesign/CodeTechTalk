@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Description goes here">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="CodeTechTalk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forms</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+
+  </head>
+  <body>
+    <header>
+      Header goes here
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Contact us</h1>
+            <form method="post" action="/form" name="registration">
+              <fieldset>
+                <legend>Information</legend>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" class="form-control" name="firstName" placeholder="Name" required />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" class="form-control" name="lastName" placeholder="Surname" required />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="form-control" name="email" placeholder="user@email.com" required />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" class="form-control" name="phone" placeholder="+1 (123) 456-7890" required />
+                    <small class="form-text">Please provide your area code.</small>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="address1">Address</label>
+                    <input type="text" id="address1" class="form-control" name="address1" placeholder="Address 1" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="address2">Address 2</label>
+                    <input type="text" id="address2" class="form-control" name="address2" placeholder="PO BOX | Suite #" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" id="city" class="form-control" name="city" placeholder="City name" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="state">State</label>
+                    <input type="text" id="state" class="form-control" name="state" placeholder="TX" maxlength="2" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="zipcode">Zip Code</label>
+                    <input type="text" id="zipcode" class="form-control" name="zipcode" placeholder="76013-0942" />
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Preference</legend>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <h4>Days of the week</h4>
+                    <div class="form-check">
+                      <input type="checkbox" id="monday" class="form-checkbox-input" name="dayOfTheWeek" value="Monday" />
+                      <label class="form-check-label" for="monday">Monday</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" id="tuesday" class="form-checkbox-input" name="dayOfTheWeek" value="Tuesday" />
+                      <label class="form-check-label" for="tuesday">Tuesday</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" id="wednesday" class="form-checkbox-input" name="dayOfTheWeek" value="Wednesday" />
+                      <label class="form-check-label" for="wednesday">Wednesday</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" id="thursday" class="form-checkbox-input" name="dayOfTheWeek" value="Thursday" />
+                      <label class="form-check-label" for="thursday">Thursday</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" id="friday" class="form-checkbox-input" name="dayOfTheWeek" value="Friday" />
+                      <label class="form-check-label" for="friday">Friday</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" id="saturday" class="form-checkbox-input" name="dayOfTheWeek" value="Saturday" />
+                      <label class="form-check-label" for="saturday">Saturday</label>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <h4>Time of day</h4>
+                    <div class="form-check">
+                      <input type="radio" id="morning" class="form-checkbox-input" name="timeOfDay" value="Morning" />
+                      <label class="form-check-label" for="morning">Morning</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" id="afternoon" class="form-checkbox-input" name="timeOfDay" value="Afternoon" />
+                      <label class="form-check-label" for="afternoon">Afternoon</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" id="evening" class="form-checkbox-input" name="timeOfDay" value="Evening" />
+                      <label class="form-check-label" for="evening">Evening</label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Preference</legend>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <div class="form-group">
+                      <label for="department">Select department</label>
+                      <select id="department" class="form-control" name="department">
+                        <option value="customerService">Customer Service</option>
+                        <option value="technicalSupport">Technical Support</option>
+                        <option value="newAccounts">New Accounts</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="reason">Reason for contact</label>
+                    <textarea id="reason" class="form-control" name="reason" rows="5" placeholder="Enter your comment here" maxlength="300"></textarea>
+                  </div>
+                </div>
+              </fieldset>
+              <input type="submit" value="Submit form" id="submit" class="btn btn-primary" name="submit" />
+              <input type="reset" value="Erase everything" id="reset" class="btn btn-secondary" name="reset" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Footer goes here
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

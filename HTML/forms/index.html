@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Description goes here">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="CodeTechTalk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forms</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/introduction.css">
+
+  </head>
+  <body>
+    <header>
+      Header goes here
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Forms & fields</h1>
+            <h2>&lt;input /&gt; fields</h2>
+            <h3>Value receiving inputs</h3>
+            <form class="example">
+              <div class="form-group">
+                <label for="text">&lt;input type="text" id="text" class="form-control" name="text" placeholder="Text input field" required /&gt;</label>
+                <input type="text" id="text" class="form-control" name="text" placeholder="Text input field" required />
+                <small class="form-text">This input can also accept <strong>maxlength=""</strong> as an attribute</small>
+              </div>
+              <div class="form-group">
+                <label for="number">&lt;input type="number" id="number" class="form-control" name="number" /&gt;</label>
+                <input type="number" type="number" id="number" class="form-control" name="number" />
+                <small class="form-text">This input can also accept <strong>maxlength=""</strong> as an attribute</small>
+              </div>
+              <div class="form-group">
+                <label for="email">&lt;input type="email" id="email" class="form-control" name="email" placeholder="user@email.com" /&gt;</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="user@email.com" />
+                <small class="form-text">This input can also accept <strong>maxlength=""</strong> as an attribute</small>
+              </div>
+              <div class="form-group">
+                <label for="password">&lt;input type="password" id="password" class="form-control" name="password" /&gt;</label>
+                <input type="password" id="password" class="form-control" name="password" />
+                <small class="form-text">This input can also accept <strong>maxlength=""</strong> as an attribute</small>
+              </div>
+              <div class="form-group">
+                <label for="hidden">&lt;input type="hidden" id="hidden" class="form-control" name="hidden" /&gt;</label>
+                <input type="hidden" id="hidden" class="form-control" name="hidden" />
+              </div>
+              <div class="form-group">
+                <label for="file">&lt;input type="file" id="file" class="form-control" name="file" /&gt;</label>
+                <input type="file" id="file" class="form-control" name="file" />
+              </div>
+            </form>
+
+            <h3>Buttons</h3>
+            <form class="example">
+              <div class="form-group">
+                <label for="submit">&lt;input type="submit" id="submit" class="btn btn-primary" name="submit" /&gt;</label><br />
+                <input type="submit" value="Submit form" id="submit" class="btn btn-primary" name="submit" />
+              </div>
+              <div class="form-group">
+                <label for="reset">&lt;input type="reset" id="reset" class="btn btn-secondary" name="reset" /&gt;</label><br />
+                <input type="reset" value="Erase everything" id="reset" class="btn btn-secondary" name="reset" />
+              </div>
+              <div class="form-group">
+                <label for="button">&lt;input type="button" id="button" class="btn btn-primary" name="button" /&gt;</label><br />
+                <input type="button" value="I'm a button" id="button" class="btn btn-primary" name="button" />
+              </div>
+            </form>
+
+            <h3>Checkboxes</h3>
+            <form class="example">
+              <div class="form-group">
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-0" class="form-checkbox-input" name="checkbox" value="" />
+                  <label class="form-check-label" for="checkbox-0">&lt;input type="checkbox" id="checkbox-0" class="form-checkbox-input" name="checkbox" value="" /&gt;</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-1" class="form-checkbox-input" name="checkbox" value="" checked />
+                  <label class="form-check-label" for="checkbox-1">&lt;input type="checkbox" id="checkbox-1" class="form-checkbox-input" name="checkbox" value="" checked /&gt;</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="checkbox-2" class="form-checkbox-input" name="checkbox" value="" disabled />
+                  <label class="form-check-label" for="checkbox-2">&lt;input type="checkbox" id="checkbox-2" class="form-checkbox-input" name="checkbox" value="" disabled /&gt;</label>
+                </div>
+              </div>
+            </form>
+
+            <h3>Radio button</h3>
+            <form class="example">
+              <div class="form-group">
+                <div class="form-check">
+                  <input type="radio" id="radio-0" class="form-checkbox-input" name="radio" value="" />
+                  <label class="form-check-label" for="radio-0">&lt;input type="radio" id="radio-0" class="form-checkbox-input" name="radio" value="" /&gt;</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" id="radio-1" class="form-checkbox-input" name="radio" value="" checked />
+                  <label class="form-check-label" for="radio-1">&lt;input type="radio" id="radio-1" class="form-checkbox-input" name="radio" value="" checked /&gt;</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" id="radio-2" class="form-checkbox-input" name="radio" value="" disabled />
+                  <label class="form-check-label" for="radio-2">&lt;input type="radio" id="radio-2" class="form-checkbox-input" name="radio" value="" disabled /&gt;</label>
+                </div>
+              </div>
+            </form>
+
+            <h2>Textarea</h2>
+            <form class="example">
+              <div class="form-group">
+                <label for="textarea">&lt;textarea id="textarea" class="form-control" name="textarea" rows="5" placeholder="Enter your comment here" maxlength="200"&gt;&lt;/textarea&gt;</label>
+                <textarea id="textarea" class="form-control" name="textarea" rows="5" placeholder="Enter your comment here" maxlength="200"></textarea>
+              </div>
+            </form>
+
+            <h2>Select</h2>
+            <form class="example">
+              <div class="form-group">
+                <label for="select-0">&lt;select id="select-0" class="form-control" name="select-0"&gt;&lt;/select&gt;</label>
+                <select id="select-0" class="form-control" name="select-0">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="select-1">&lt;select id="select-1" class="form-control" name="select-1" size="2"&gt;&lt;/select&gt;</label>
+                <select id="select-1" class="form-control" name="select-2" size="2">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab"selected >Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="select-2">&lt;select id="select-2" class="form-control" name="select-2" multiple size="4"&gt;&lt;/select&gt;</label>
+                <select id="select-2" class="form-control" name="select-2" multiple size="4">
+                  <option value="volvo" selected>Volvo</option>
+                  <option value="saab" selected>Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="select-3">&lt;select id="select-3" class="form-control" name="select-3"&gt;&lt;/select&gt;</label>
+                <select id="select-3" class="form-control" name="select-3">
+                  <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                  </optgroup>
+                  <optgroup label="German Cars">
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                  </optgroup>
+                </select>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Footer goes here
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

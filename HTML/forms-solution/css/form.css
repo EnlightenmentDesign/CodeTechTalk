@@ -1,0 +1,94 @@
+.form-row {
+	margin-left: -1rem;
+	margin-right: -1rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+fieldset {
+  border: 0 none;
+  padding: var(--padding);
+  margin-bottom: 3rem;
+  background: var(--light-gray);
+}
+
+fieldset legend {
+  color: var(--white);
+  background-color: var(--primary-dark);
+  padding: var(--padding);
+  font-size: var(--sm-font);
+  text-transform: uppercase;
+}
+
+form.example {
+  margin-bottom: 3rem;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #cccccc;
+  padding: var(--padding);
+  color: var(--text);
+}
+
+.form-control:required {
+  border-color: green;
+  outline: green auto 1px;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  outline: var(--primary-color) auto 1px;
+}
+
+.form-control:invalid {
+  border-color: var(--black);
+  outline: var(--black) auto 1px;
+}
+
+.form-text {
+  font-size: var(--sm-font);
+}
+
+.form-check {
+  margin-bottom: 0.5rem;
+}
+
+label.form-check-label {
+    padding-left: 0.5rem;
+    font-weight: 400;
+}
+
+label {
+  color: var(--black);
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+
+}
+
+select.form-control[multiple], select.form-control[size] {
+    height: auto;
+}
+
+option {
+
+}
