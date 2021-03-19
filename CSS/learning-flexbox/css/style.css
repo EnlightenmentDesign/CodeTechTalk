@@ -1,0 +1,30 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.1618em;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background-color: #efefef;
+  font-size: 1rem;
+  line-height: 1.618rem;
+  color: #222222;
+  font-weight: 400;
+}
+
+/* Flexbox Styles */
+.parent {
+  border: 1px solid #C700BB;
+}
+
+.child {
+  width: 30vw;
+  height: 30vw;
+  background-color: #ED30CA;
+  border: 1px solid #770087;
+}
+/* End of Flexbox Styles */
